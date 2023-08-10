@@ -14,7 +14,7 @@ app.use(cors())
 app.use(bodyParser.json())
 app.use(express.static('/public'))
 
-
+//get method
 app.get('/',(req,res)=>{
     res.send("everything is fine")
 })
