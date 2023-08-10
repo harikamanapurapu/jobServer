@@ -210,7 +210,7 @@ app.get('/viewjobs/:jobId', async (req, res) => {
 
 
 app.listen(process.env.PORT,()=>{
-    mongoose.connect(process.env.MONGODB_url)
+    mongoose.connect(process.env.MONGODB_URL)
         .then(()=>console.log(`server running on http://localhost:${process.env.PORT}`))
         .catch(err=>console.log(err))
 })
